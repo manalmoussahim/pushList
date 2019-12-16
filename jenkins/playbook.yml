@@ -1,0 +1,8 @@
+---
+- name: Installation php et copie du code source
+  hosts: webserver
+  remote_user: manal
+  become: yes
+  vars:
+    source: /var/lib/jenkins/workspace/PushListFromGit
+    destination: /var/www/html
