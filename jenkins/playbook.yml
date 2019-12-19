@@ -6,3 +6,5 @@
   vars:
     source: /var/lib/jenkins/workspace/PushListFromGit
     destination: /var/www/html
+  roles:
+    - webserver
