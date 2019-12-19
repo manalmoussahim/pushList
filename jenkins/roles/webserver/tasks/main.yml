@@ -1,4 +1,8 @@
 ---
 - name: Installation apache2 et php
   raw: apt install -y apache2 php libapache2-mod-php
+- name: "copie du code source {{ source }}"
+  synchronize:
+    src: "{{ source }}/"
+    dest: "{{ destination }}/"
 ...
